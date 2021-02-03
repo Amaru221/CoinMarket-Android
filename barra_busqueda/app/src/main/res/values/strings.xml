@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">CoinMarket</string>
+    <string name="title_activity_detalles">detalles</string>
+    <string name="price">Price: </string>
+    <string name="marketcap">Marketcap: </string>
+    <string name="symbol">Symbol:</string>
+    <string name="priceusd">Price (USD):</string>
+    <string name="pricebtc">Price (BTC):</string>
+    <string name="volume">24h Volume:</string>
+    <string name="market">Market Cap:</string>
+    <string name="available">Available Supply:</string>
+    <string name="total">Total Supply:</string>
+    <string name="max">Max Supply:</string>
+    <string name="change1">Change 1h:</string>
+    <string name="change24">Change 24h:</string>
+    <string name="change7">Change 7d:</string>
+    <string name="search_title">action_search</string>
+    <string name="home">Home</string>
+    <string name="share">Compartir</string>
+    <string name="comunicado">Comunicado</string>
+    <string name="heroes_zeroes">Heroes y Zeroes</string>
+    <string name="Soporte">Soporte Técnico</string>
+    <string name="converter">Convertidor</string>
+    <string name="info">Información App</string>
+    <string name="search">search</string>
+    <string name="submitted">submitted</string>
+    <string name="search_hint">busqueda...</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="calcular">Calcular</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="string1">Menu Principal</string>
+    <string name="alarm">Alertas</string>
+    <string name="tvalerta">Selecciona una moneda para definir una alerta</string>
+    <string name="b1">CREAR ALERTA</string>
+    <string name="info1">Esta aplicación está diseñada para un proyecto final de curso</string>
+    <string name="info2">Creada por el alumno Antonio García Delgado</string>
+    <string name="info3">Los recursos de esta aplicacion son ofrecidos por:</string>
+    <string name="info4">GDAX API</string>
+    <string name="info5">API COINMARKETCAP v1</string>
+    <string name="info6">API COINMARKETCAP v2</string>
+    <string name="info7">datos historicos suministrados por la API de POLONIEX</string>
+    <string name="info8">CriptoApp</string>
+    <string name="nombreapp">CriptoMarket</string>
+    <string name="dialog1">elige una moneda</string>
+    <string name="dialog2">Elige un porcentaje(%)</string>
+    <string name="dialog3">Ordenar por</string>
+    <string name="cargadialog">Por favor espera...</string>
+    <string name="dialog4">Escoge tiempo desde el primer valor</string>
+    <string name="dialog5">Escoge el periodo entre cada valor</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="conversiones">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>ZAR</item>
+    </string-array>
+    <string-array name="periodo">
+        <item>5 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>2 horas</item>
+        <item>4 horas</item>
+        <item>1 día</item>
+    </string-array>
+    <string-array name="tiempo">
+        <item>1 día</item>
+        <item>7 días</item>
+        <item>30 días</item>
+    </string-array>
+    <string-array name="porcent">
+        <item>1h</item>
+        <item>24h</item>
+        <item>7d</item>
+    </string-array>
+    <string-array name="ordenar">
+        <item>Nombre</item>
+        <item>Market Cap</item>
+        <item>Precio</item>
+    </string-array>
+
+    <string name="title_activity_heroes_zeroes">heroes y zeroes</string>
+    <string name="title_activity_conversor">Conversor</string>
+    <string name="title_activity_alertas">Alertas</string>
+    <string name="title_activity_info_app">info_app</string>
+</resources>

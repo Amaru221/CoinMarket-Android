@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2E2E2E</color>
+    <color name="colorPrimaryDark">#050505</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rojo">#FD0202</color>
+    <color name="naranja">#FF8000</color>
+    <color name="naranjaclaro">#facc2e</color>
+    <color name="negro">#050505</color>
+    <color name="grey">#2E2E2E</color>
+    <color name="grisclaro">#6e6e6e</color>
+    <color name="blanco">#ffffff</color>
+    <color name="azul">#2E64FE</color>
+    <color name="unlike">#9E9E9E</color>
+    <color name="letrainfo">#bdbdbd</color>
+</resources>

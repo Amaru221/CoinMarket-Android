@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.agd19.barra_busqueda.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TabHost
+            android:id="@+id/TabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/swipeRefresh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="8dp" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/swipeRefresh2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recViewFav"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:layout_editor_absoluteX="8dp"
+                                tools:layout_editor_absoluteY="8dp" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.agd19.barra_busqueda.activity_detalles">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvnombre"
+            android:paddingLeft="10dp"
+            style="@style/tipoletra"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></com.github.mikephil.charting.charts.LineChart>
+
+        <TextView
+            android:id="@+id/tvalor"
+            style="@style/detallesletra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/intercalado"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvsymbol1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/symbol" />
+
+            <TextView
+                android:id="@+id/tvsymbol2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvprice1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/priceusd" />
+
+            <TextView
+                android:id="@+id/tvprice2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/intercalado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvpricebtc1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/pricebtc" />
+
+            <TextView
+                android:id="@+id/tvpricebtc2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvvolumen1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/volume" />
+
+            <TextView
+                android:id="@+id/tvvolumen2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/intercalado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvmarketcap1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/market" />
+
+            <TextView
+                android:id="@+id/tvmarketcap2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvavailable1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/available" />
+
+            <TextView
+                android:id="@+id/tvavailable2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/intercalado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvtotal1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/total" />
+
+            <TextView
+                android:id="@+id/tvtotal2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvmax1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/max" />
+
+            <TextView
+                android:id="@+id/tvmax2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/intercalado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvchange1h1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/change1" />
+
+            <TextView
+                android:id="@+id/tvchange1h2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvchange24h1"
+                style="@style/tipoletra"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/change24" />
+
+            <TextView
+                android:id="@+id/tvchange24h2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/intercalado"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvchange7d1"
+                android:paddingLeft="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/change7" />
+
+            <TextView
+                android:id="@+id/tvchange7d2"
+                android:paddingRight="10dp"
+                style="@style/tipoletra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="TextView" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

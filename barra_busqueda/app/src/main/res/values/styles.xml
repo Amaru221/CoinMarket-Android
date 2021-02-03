@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/naranjaclaro</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="symbol">
+        <item name="android:textColor">@color/naranja</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="fondo">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="letranombre">
+        <item name="android:textColor">@color/naranjaclaro</item>
+    </style>
+
+    <style name="tipoletra">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="letrablanca">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="detallesletra">
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="intercalado">
+        <item name="android:background">@color/grisclaro</item>
+    </style>
+
+    <style name="padeadoright">
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="padeadoleft">
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+</resources>
